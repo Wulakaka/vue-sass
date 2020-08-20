@@ -1,0 +1,12 @@
+@use 'theme/dark-gray.scss';
+@use 'theme/dark-blue.scss';
+
+
+@mixin text-color($property) {
+  .dark-gray {
+    #{$property}: dark-gray.$text-color;
+  }
+  .dark-blue {
+    #{$property}: dark-blue.$text-color;
+  }
+}

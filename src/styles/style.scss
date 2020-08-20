@@ -1,0 +1,18 @@
+@use "foundation/corners";
+@use 'mixins';
+// @use 'theme/dark-gray.scss';
+// @use 'theme/dark-blue.scss';
+.button {
+  @include corners.rounded;
+  padding: 5px + corners.$radius;
+}
+
+@include mixins.text-color(color)
+
+// .dark-blue {
+//   color: dark-blue.$text-color;
+// }
+
+// .dark-gray {
+//   color: dark-gray.$text-color;
+// }
