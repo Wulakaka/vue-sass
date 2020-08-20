@@ -1,12 +1,22 @@
 @use 'theme/dark-gray.scss';
 @use 'theme/dark-blue.scss';
 
+$text-colors: ("dark-blue": dark-blue.$text-color, "dark-gray": dark-gray.$text-color);
 
-@mixin text-color($property) {
-  .dark-gray {
-    #{$property}: dark-gray.$text-color;
+
+@mixin theme-color($property, $map) {
+  @each $theme, $color in $map {
+    .#{$theme} & {
+      #{$property}: $color;
+    }
   }
-  .dark-blue {
-    #{$property}: dark-blue.$text-color;
+}
+
+@mixin list {
+  .dark-gray &{
+    @include dark-gray.list;
+  }
+  .dark-blue &{
+    @include dark-blue.list;
   }
 }

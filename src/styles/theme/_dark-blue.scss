@@ -1,4 +1,9 @@
 $text-color: blue;
-@mixin text-color{
-  color: blue;
+
+@mixin list {
+  background: darkblue;
+  line-height: 14px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin:5px;
 }
