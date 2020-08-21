@@ -1,7 +1,7 @@
-$text-color: blue;
+$text-color: darkblue;
 
 @mixin list {
-  background: darkblue;
+  background: $text-color;
   line-height: 14px;
   font-size: 12px;
   border-radius: 3px;

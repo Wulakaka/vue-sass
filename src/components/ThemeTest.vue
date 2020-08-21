@@ -10,6 +10,7 @@
     <ul>
       <li v-for="i in 10" :key="i">{{i}}</li>
     </ul>
+    <el-button type="primary" size="mini">primary</el-button>
   </div>
 </template>
 
