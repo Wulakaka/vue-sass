@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/logo.png" />
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-<ThemeTest></ThemeTest>
+    <ThemeTest></ThemeTest>
+    <ThemePicker></ThemePicker>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue';
-import ThemeTest from './components/ThemeTest.vue';
+import ThemeTest from "./components/ThemeTest.vue";
+import ThemePicker from "./components/ThemePicker.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    ThemeTest
-  }
-}
+    ThemeTest,
+    ThemePicker,
+  },
+};
 </script>
 
 <style>
